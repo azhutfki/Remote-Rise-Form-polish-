@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Rise Transcription - Formularz aplikacyjny</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Remote Rise Transcription - Formularz aplikacyjny</h1>
+        <form action="mailto:brittaniaocho@gmail.com?subject=Remote%20Rise%20Application" method="post" enctype="text/plain">
+            <label for="fullName">Pełne imię i nazwisko:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="contactInfo">Informacje kontaktowe (Email lub numer telefonu):</label>
+            <input type="text" id="contactInfo" name="contactInfo" required>
+
+            <label for="age">Wiek:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="language">Język:</label>
+            <input type="text" id="language" name="language" required>
+
+            <label for="country">Kraj:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="education">Poziom wykształcenia:</label>
+            <input type="text" id="education" name="education" required>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+</body>
+</html>
